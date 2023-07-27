@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 mkdir -p $out
-cp ./crates/wasm/README.md $out/
-cp ./crates/wasm/package.json $out/
+
+cp ./README.md ./pkg/
+cp ./package.json ./pkg/
 cp -r ./pkg/* $out/
 
 echo "## Tracking" >> $out/README.md
