@@ -972,6 +972,13 @@ impl Context {
         result_ids: &[ValueId],
     ) -> Result<Vec<AcirValue>, RuntimeError> {
         match intrinsic {
+            Intrinsic::AssertEq => {
+                let lhs = self.convert_value(arguments[0], dfg).into_var()?;
+                let rhs = self.convert_value(arguments[1], dfg).into_var()?;
+
+                self.acir_context.assert_eq_var(lhs, rhs)?;
+                Ok(Vec::new())
+            }
             Intrinsic::BlackBox(black_box) => {
                 let inputs = vecmap(arguments, |arg| self.convert_value(*arg, dfg));
 

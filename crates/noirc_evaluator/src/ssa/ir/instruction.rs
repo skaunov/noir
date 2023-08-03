@@ -40,6 +40,7 @@ pub(crate) enum Intrinsic {
     SliceInsert,
     SliceRemove,
     Println,
+    AssertEq,
     ToBits(Endian),
     ToRadix(Endian),
     BlackBox(BlackBoxFunc),
@@ -48,6 +49,7 @@ pub(crate) enum Intrinsic {
 impl std::fmt::Display for Intrinsic {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
+            Intrinsic::AssertEq => write!(f, "assert_eq"),
             Intrinsic::Println => write!(f, "println"),
             Intrinsic::Sort => write!(f, "arraysort"),
             Intrinsic::ArrayLen => write!(f, "array_len"),
@@ -71,6 +73,7 @@ impl Intrinsic {
     /// If there is no such intrinsic by that name, None is returned.
     pub(crate) fn lookup(name: &str) -> Option<Intrinsic> {
         match name {
+            "assert_eq" => Some(Intrinsic::AssertEq),
             "println" => Some(Intrinsic::Println),
             "arraysort" => Some(Intrinsic::Sort),
             "array_len" => Some(Intrinsic::ArrayLen),
