@@ -203,7 +203,7 @@ dependencies = [
 
 [[package]]
 name = "arena"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "generational-arena",
 ]
@@ -1233,7 +1233,7 @@ dependencies = [
 
 [[package]]
 name = "fm"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "cfg-if",
  "codespan-reporting",
@@ -1738,7 +1738,7 @@ dependencies = [
 
 [[package]]
 name = "iter-extended"
-version = "0.9.0"
+version = "0.10.0"
 
 [[package]]
 name = "itertools"
@@ -1975,7 +1975,7 @@ checksum = "7843ec2de400bcbc6a6328c958dc38e5359da6e93e72e37bc5246bf1ae776389"
 
 [[package]]
 name = "nargo"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "acvm",
  "base64",
@@ -1994,7 +1994,7 @@ dependencies = [
 
 [[package]]
 name = "nargo_cli"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "acvm",
  "acvm-backend-barretenberg",
@@ -2031,7 +2031,7 @@ dependencies = [
 
 [[package]]
 name = "nargo_toml"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "dirs",
  "fm",
@@ -2045,7 +2045,7 @@ dependencies = [
 
 [[package]]
 name = "noir_lsp"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "acvm",
  "async-lsp",
@@ -2064,7 +2064,7 @@ dependencies = [
 
 [[package]]
 name = "noir_wasm"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "acvm",
  "build-data",
@@ -2082,7 +2082,7 @@ dependencies = [
 
 [[package]]
 name = "noirc_abi"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "acvm",
  "iter-extended",
@@ -2096,7 +2096,7 @@ dependencies = [
 
 [[package]]
 name = "noirc_driver"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "acvm",
  "base64",
@@ -2111,7 +2111,7 @@ dependencies = [
 
 [[package]]
 name = "noirc_errors"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "chumsky",
  "codespan",
@@ -2122,7 +2122,7 @@ dependencies = [
 
 [[package]]
 name = "noirc_evaluator"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "acvm",
  "im",
@@ -2136,7 +2136,7 @@ dependencies = [
 
 [[package]]
 name = "noirc_frontend"
-version = "0.9.0"
+version = "0.10.0"
 dependencies = [
  "acvm",
  "arena",
